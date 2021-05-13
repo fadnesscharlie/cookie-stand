@@ -23,18 +23,12 @@ let seattle = {
   },
   calcCookiesPerHour: function () {
     // Creating a for loop to find cookies per hour, placing into an array and list on sales.html
-    let totalCookies = 1;
     for (let i = 0; i < hours.length; i++){
       seattle.cookies = Math.ceil(this.avg * this.getRandomNumberCustomers());
-      // console.log(seattle.cookies);
-      // console.log(totalCookies + 'total cookies before');
-      totalCookies = totalCookies + seattle.cookies;
-      // console.log(totalCookies + 'total cookies after');
       seattle.perHour.push(seattle.cookies);
-      seattle.dailyTotal = seattle.dailyTotal + seattle.cookies;
     }
+    seattle.dailyTotal = seattle.dailyTotal + seattle.cookies;
     // console.log(seattle.dailyTotal + ' total amount');
-    // console.log(seattle.perHour + ' per Hour array');
     return seattle.perHour;
   },
   displayToSales: function () {
@@ -67,8 +61,8 @@ let tokyo = {
     for (let i = 0; i < hours.length; i++){
       tokyo.cookies = Math.ceil(this.avg * this.getRandomNumberCustomers());
       tokyo.perHour.push(tokyo.cookies);
-      tokyo.dailyTotal = tokyo.dailyTotal + tokyo.cookies;
     }
+    tokyo.dailyTotal = tokyo.dailyTotal + tokyo.cookies;
     return tokyo.perHour;
   },
   displayToSales: function () {
@@ -100,8 +94,8 @@ let dubai = {
     for (let i = 0; i < hours.length; i++){
       dubai.cookies = Math.ceil(this.avg * this.getRandomNumberCustomers());
       dubai.perHour.push(dubai.cookies);
-      dubai.dailyTotal = dubai.dailyTotal + dubai.cookies;
     }
+    dubai.dailyTotal = dubai.dailyTotal + dubai.cookies;
     return dubai.perHour;
   },
   displayToSales: function () {
@@ -133,8 +127,8 @@ let paris = {
     for (let i = 0; i < hours.length; i++){
       paris.cookies = Math.ceil(this.avg * this.getRandomNumberCustomers());
       paris.perHour.push(paris.cookies);
-      paris.dailyTotal = paris.dailyTotal + paris.cookies;
     }
+    paris.dailyTotal = paris.dailyTotal + paris.cookies;
     return paris.perHour;
   },
   displayToSales: function () {
@@ -167,8 +161,8 @@ let lima = {
     for (let i = 0; i < hours.length; i++){
       lima.cookies = Math.ceil(this.avg * this.getRandomNumberCustomers());
       lima.perHour.push(lima.cookies);
-      lima.dailyTotal = lima.dailyTotal + lima.cookies;
     }
+    lima.dailyTotal = lima.dailyTotal + lima.cookies;
     return lima.perHour;
   },
   displayToSales: function () {

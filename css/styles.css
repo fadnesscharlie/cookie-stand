@@ -28,6 +28,10 @@ table, th, td {
   padding: 10px;
 }
 
+tr:nth-child(even) {
+  background-color: paleturquoise;
+}
+
 body {
   background-color: palegoldenrod;
 }

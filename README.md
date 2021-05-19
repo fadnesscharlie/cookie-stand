@@ -8,6 +8,10 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Collaborators
 
+* Phil Murphy
+* Heather Bisgaard
+* Quentin Young
+
 ### Links and Resources
 
 * [submission PR](http://xyz.com)

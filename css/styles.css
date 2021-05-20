@@ -1,16 +1,16 @@
 body {
   background-color: palegoldenrod;
   font-size: 2em;
-  
 }
 
 /* header */
 body header:first-of-type {
   background-color: green;
 }
+
  body header nav { 
   margin-top: 25px;
-  border: 4px solid orange;
+  /* border: 4px solid orange; */
   /* display: inline-block;  */
   color:blue;
   overflow: auto;
@@ -29,15 +29,14 @@ body header nav img h1 {
   width:15%;
   text-align: center;
   border: 4px solid black;
-
 }
-
 
 /* chinook image */
 body header nav img:last-of-type { 
   height: 150px;
   float: right;
 }
+
 section article header {
   background-color: palegreen;
   /* display: block; */
@@ -73,7 +72,7 @@ h3 * {
 main {
   width: 960px;
   margin: auto;
-  position: relative;
+  /* position: relative; */
 }
 
 main div {
@@ -82,17 +81,21 @@ main div {
 
 /* Middle section */
 #right-bar {
-  border: 4px solid blue;
-  flex: 40%;
+  /* border: 4px solid blue; */
+  /* flex: 40%; */
+  /* flex: 1 300px; */
   margin-top: 25px;
+  width: 500px;
 }
+
 main article section {
   margin: 15px;
 }
 
 #left-bar {
-  border: 4px solid yellow;
-  flex: 60%;
+  /* border: 4px solid yellow; */
+  /* flex: 60%; */
+  /* flex: 1 2; */
   margin-top: 25px;
   margin-left: 5px;
 }
@@ -105,26 +108,27 @@ main section article section div img {
   /* display: inline-block; */
 }
 
-main section article section div a img:nth-child(even) {
+main div section article section div img:nth-child(even) {
   float: right;
 }
 
+
 /* Middle Right section */
 .section ul li {
-  color: red;
+  color: green;
   list-style: circle;
   margin-left: 25px;
   font-size: .8em;
 }
 
-.section ul li li {
+.section ul li ul li {
   margin-left: 30px;
-  color:blue;
+  /* color:blue; */
 }
 
 ul {
   margin: 10px;
-  border: 4px dashed blue;
+  /* border: 4px dashed blue; */
   
 }
 
@@ -144,7 +148,6 @@ main article div:last-child {
   width: 200px;
   border: 8px solid black;
   background-color: slategrey;
-  
   padding: 10px;
 }
 
@@ -165,7 +168,7 @@ footer {
   /* position: absolute; */
   bottom: 10px;
   width: 50%;
-  border: 3px solid #8AC007;
+  /* border: 3px solid #8AC007; */
 }
 
 footer img {

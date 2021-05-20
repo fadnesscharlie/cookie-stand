@@ -1,59 +1,92 @@
+body {
+  background-color: palegoldenrod;
+  font-size: 2em;
+  
+}
+
+/* header */
+body header:first-of-type {
+  background-color: green;
+}
+ body header nav { 
+  margin-top: 25px;
+  border: 4px solid orange;
+  /* display: inline-block;  */
+  color:blue;
+  overflow: auto;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+/* salmon image */
+body header nav img:first-of-type {
+  height: 150px;
+  float:left;
+}
+
+body header nav img h1 {
+  width:15%;
+  text-align: center;
+  border: 4px solid black;
+
+}
+
+
+/* chinook image */
+body header nav img:last-of-type { 
+  height: 150px;
+  float: right;
+}
+section article header {
+  background-color: palegreen;
+  /* display: block; */
+  /* margin-right: auto; */
+  /* margin-left:auto; */
+  border: 10px solid palegreen;
+  text-align: center;
+  /* display: inline-block; */
+}
+
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin: 10px;
   padding: 5px;
 }
 
-h2 {
+h2 * {
+  background-color: palegreen;
   font-size: 2.5em;
   margin: 10px;
   padding: 5px;
 }
 
-header {
+h3 * {
   background-color: palegreen;
-  display: block;
-  margin-right: auto;
-  margin-left:auto;
-  border: 10px solid palegreen;
-  text-align: center;
-}
-
-#sales {
-  font-size: 2em;
-}
-
-table, th, td {
-  border: 1px solid black;
-  padding: 10px;
-}
-
-tr:nth-child(even) {
-  background-color: paleturquoise;
-}
-
-body {
-  background-color: palegoldenrod;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  /* background-color: blue; */
+  /* margin-left: 0px; */
 }
 
 main {
-  /* width: 960px; */
+  width: 960px;
   margin: auto;
+  position: relative;
+}
+
+main div {
   display: flex;
 }
 
-ul {
-  margin: 10px;
-  border: 4px dashed blue;
-}
-
+/* Middle section */
 #right-bar {
   border: 4px solid blue;
   flex: 40%;
   margin-top: 25px;
 }
-
-.section {
+main article section {
   margin: 15px;
 }
 
@@ -64,20 +97,80 @@ ul {
   margin-left: 5px;
 }
 
-#img {
-  display: block;
-  width: auto;
-  margin: auto;
-  margin-top: 25px;
-  border: 4px solid orange;
+main section article section div img {
+  border: 4px solid black;
+  padding: 30px;
+  background-color: honeydew;
+  width: 300px;
+  /* display: inline-block; */
 }
+
+main section article section div a img:nth-child(even) {
+  float: right;
+}
+
+/* Middle Right section */
+.section ul li {
+  color: red;
+  list-style: circle;
+  margin-left: 25px;
+  font-size: .8em;
+}
+
+.section ul li li {
+  margin-left: 30px;
+  color:blue;
+}
+
+ul {
+  margin: 10px;
+  border: 4px dashed blue;
+  
+}
+
+main article:last-child{
+  margin: 15px;
+}
+
+main article img {
+  border: 4px solid black;
+  padding: 30px;
+  background-color: honeydew;
+  float:left;
+}
+
+main article div:last-child {
+  margin-top: 50px;
+  width: 200px;
+  border: 8px solid black;
+  background-color: slategrey;
+  
+  padding: 10px;
+}
+
+main article div a {
+  text-decoration: none;
+}
+
+main article div:hover {
+  transition: 350ms;
+  background-color: snow;
+}
+/* footer */
 
 footer {
-  position: absolute;
-  bottom: 0;
-  margin: 25px;
+  width: 960px;
+  margin: auto;
+  margin-top: 50px;
+  /* position: absolute; */
+  bottom: 10px;
+  width: 50%;
+  border: 3px solid #8AC007;
 }
 
-table {
-  margin-right: 0;
+footer img {
+  border: 4px dotted green;
+  border-radius: 900px;
+  height: 200px;
+  float: left;
 }

@@ -20,7 +20,7 @@ function Shop (shopName, min, max, avg) {
   this.finalTotalText = 0;
   shopArray.push(this);
   this.finalTotal = function() {
-    for(let i = 0; i < shopArray.length; i++){ 
+    for(let i = 0; i < shopArray.length; i++){
       //Adding all the totals from all the stores into one final tally
       this.finalTotalText += shopArray[i].dailyTotal;
     }
@@ -56,7 +56,7 @@ Shop.prototype.headerRender = function () {
     headTableId.appendChild(td);
   }
   let td = document.createElement('td');
-  td.textContent = 'Daily Location Total';
+  td.innerHTML = 'Daily<br>Location<br>Total';
   headTableId.appendChild(td);
 };
 
@@ -79,7 +79,7 @@ Shop.prototype.render = function () {
 };
 
 Shop.prototype.footerRender = function (arr) {
-  arr.unshift('Hourly Totals'); // Adding string to first in footer row
+  arr.unshift('Hourly <br>Totals'); // Adding string to first in footer row
   for (let i = 0; i < arr.length; i++) {
     let td = document.createElement('td');
     td.innerHTML = arr[i]; // Appending return value from totalPerHour(shopArray)

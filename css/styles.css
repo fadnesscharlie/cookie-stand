@@ -21,11 +21,13 @@ body header:first-of-type {
 
 /* salmon image */
 body header nav img:first-of-type {
+  margin-top: 25px;
   height: 150px;
   float:left;
 }
 
 body header nav img h1 {
+  margin-top: 25px;
   width:15%;
   text-align: center;
   border: 4px solid black;
@@ -35,6 +37,7 @@ body header nav img h1 {
 body header nav img:last-of-type { 
   height: 150px;
   float: right;
+  
 }
 
 section article header {

@@ -17,6 +17,35 @@
       <h2>Cookie Sales <img src="img/fish.jpg" alt="fish">  </h2> <br>
       Sales are calculated by hour, then by location, and finally tallied up at the end for a final estimate
     </section>
+    <form id="cookie-form">
+      <fieldset>
+        <legend>Salmon Cookie Information</legend>
+
+        <label> Store Name
+          <!-- <input required type="text" name="name"> -->
+          <input type="text" required name="name">
+        </label>
+
+        <label> Store Min
+          <input type="number" step="any" name="storeMin">
+        </label>
+
+        <label> Store Max
+          <input type="number" step="any" name="storeMax">
+        </label>
+
+        <label> Store Average
+          <input type="number" step="any" name="storeAvg">
+        </label>
+
+        <button type="submit">Submit New Store</button>
+        <div id="here">
+          Do somethign here
+        </div>
+
+      </fieldset>
+    </form>
+
     <table>
       <thead id="headTable">
       </thead>

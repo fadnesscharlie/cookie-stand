@@ -84,6 +84,7 @@ function footerRender(){
     let td = document.createElement('td');
     let hourTotal = 0;
     for (let j = 0; j < shopArray.length; j++) {
+      console.log('j:' + j);
       hourTotal += shopArray[j].perHourArray[i];
     }
     grantTotal += hourTotal;
@@ -93,6 +94,7 @@ function footerRender(){
   let td = document.createElement('td');
   td.textContent = grantTotal; // Putting final total of everything into last footer slot
   footTableId.appendChild(td);
+  console.log('break------------------');
 }
 
 headerRender();
@@ -102,6 +104,7 @@ new Shop('Dubai', 11, 38, 3.7);
 new Shop('Paris', 20, 38, 2.3);
 new Shop('Lima', 2, 16, 4.6);
 
+footerRender();
 
 // Form stuff
 function handleStoreData(event){
@@ -114,13 +117,10 @@ function handleStoreData(event){
   let avgcookiessold = +event.target.storeAvg.value;
 
   // Places the stored input as a new shop
-  let newStore = new Shop(storeName, minimumcustomers, maxcustomers, avgcookiessold);
-  //Puts the new shop into shopArray and store functions take over
-  shopArray.push(newStore);
+  new Shop(storeName, minimumcustomers, maxcustomers, avgcookiessold);
   footTableId.innerHTML = '';
   footerRender();
 }
 myForm.addEventListener('submit', handleStoreData);
-footerRender();
 
 console.log(shopArray);
